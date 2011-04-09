@@ -1,2 +1,9 @@
 Features:
 - Relative timestamps on all posts
+
+
+Post formats:
+- Asides
+- Quotes
+- Photos
+- Galleries
