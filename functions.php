@@ -30,6 +30,7 @@ class dub {
 		
 		if ( !is_admin() ) {
 			wp_enqueue_style( 'dub_primary_css', get_bloginfo('template_directory') . '/style.css', false, DUB_VERSION );
+			wp_enqueue_style( 'dub_fonts_css', 'http://fonts.googleapis.com/css?family=Ubuntu:light,regular,500', false, DUB_VERSION );
 		}
 		
 	} // END enqueue_resources()
@@ -94,7 +95,7 @@ function dub_get_post_format( $post_id = null ) {
 	} else if ( 'photo' == get_post_format( $post_id ) || in_category( array( 'photos', 'photo' ) ) ) {
 		return 'photo';
 	} else {
-		return 'standard';
+		return 'post';
 	}
 	
 } // END dub_get_post_format()

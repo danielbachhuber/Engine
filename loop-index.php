@@ -48,7 +48,7 @@
 	
 	<?php else: ?>
 		
-	<div class="post">
+	<div class="post post-format-standard">
 
 		<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 

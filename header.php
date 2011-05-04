@@ -25,7 +25,7 @@
 	<div class="wrap">
 		
 		<div class="avatar float-left">
-		<?php echo get_avatar( get_option('admin_email'), 96 ); ?>
+		<?php echo get_avatar( get_option('admin_email'), 48 ); ?>
 		</div>
 		
 		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>

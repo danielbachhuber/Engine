@@ -9,16 +9,18 @@ License: GNU General Public License
 License URI: license.txt
 */
 
-body, html, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+body, html, h1, h2, h3, h4, h5, h6, p, ol, ul, li, blockquote {
 	margin: 0px;
 	padding: 0px;
 }
 
 html {
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	font-size: 14px;
+	font-size: 13px;
 	line-height: 20px;
-	letter-spacing: 0.1px;
+	letter-spacing: 0.2px;
+	font-weight: 300;
+	color: #222222;
 }
 
 a {
@@ -58,17 +60,21 @@ h1 {
 }
 
 h2 {
+	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 30px;
-	line-height: 38px;
+	line-height: 36px;
+	font-weight: 300;
+	letter-spacing: -0.3px;
 }
 
 h3 {
+	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	padding-top: 15px;
 	padding-bottom: 5px;
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 300;
-	letter-spacing: .3px;
+	letter-spacing: -0.2px;
 }
 
 h4 {
@@ -88,14 +94,52 @@ p {
 	padding-bottom: 5px;
 }
 
+ul, ol {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+ul {
+	list-style-type: square;
+}
+
+ul li, ol li {
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+blockquote {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666666;
+}
+
 .post {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
-.entry {
+.post .entry {
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+.post .entry a {
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.post .entry a:hover {
+	border-bottom-color: #0066CC;
+	background-color: #F2F2F2;
+}
+
+.post .entry a img {
+	border-bottom: none;
+	vertical-align:top;
 }
 
 .post .meta {
@@ -105,6 +149,14 @@ p {
 
 .post .meta a {
 	color: #888888;
+}
+
+.post .meta a:hover {
+	text-decoration: underline;
+}
+
+.post .meta .tags {
+	padding-left: 10px;
 }
 
 .post .meta .tags,
@@ -118,16 +170,42 @@ p {
 
 .post.post-format-status .entry,
 .post.post-format-aside .entry {
-	font-size: 16px;
-	line-height: 22px;
-	font-weight: 300;
-	letter-spacing: 0.2px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 200;
+	letter-spacing: 0.3px;
 }
 
 /**
  * .header
  */
-.header 
+
+.header {
+	
+}
+
+/**
+ * Template: tag.php
+ */
+
+body.archive.tag .post .format-label {
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	width: 60px;
+	text-align: center;
+	font-weight: 600;
+	background-color: #999999;
+	color: #FFFFFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+body.archive.tag .post h4 {
+	margin-left: 100px;
+}
 
 /**
  * Template: single.php
@@ -138,15 +216,17 @@ body.single .post {
 	padding-bottom: 40px;
 }
 
+body.single .post .entry {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+body.single .post.post-format-standard div.top-meta {
+	text-align:right;
+	color: #888888;
+}
+
 body.single .post.post-format-status,
 body.single .post.post-format-aside {
 	padding-top: 150px;
-}
-
-body.single .post.post-format-status .entry,
-body.single .post.post-format-aside .entry {
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 200;
-	letter-spacing: 0.3px;
 }
