@@ -380,6 +380,7 @@ body.single .post .entry {
 body.single .post.post-format-status,
 body.single .post.post-format-aside {
 	padding-top: 50px;
+	padding-bottom: 70px;
 }
 
 body.single .post.post-format-status .entry,
