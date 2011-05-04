@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
-<div class="wrap">
+<div class="main">
 	
-	<div class="main">
+	<div class="wrap">
 		
 		<?php get_template_part( 'loop', 'index' ); ?>
 		
-	</div><!-- END .main -->
+	</div><!-- END .wrap -->
 	
-</div><!-- END .wrap -->
+</div><!-- END .main -->
 
 <?php get_footer(); ?>

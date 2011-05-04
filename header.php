@@ -18,12 +18,22 @@
 </head>
 <body <?php body_class(); ?>>
 	
-<div class="wrap">
+<?php if ( !is_single() ): ?>
 	
-	<div class="header">
+<div class="header">
+	
+	<div class="wrap">
+		
+		<div class="avatar float-left">
+		<?php echo get_avatar( get_option('admin_email'), 96 ); ?>
+		</div>
 		
 		<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+		
+		<div class="clear-both"></div>
 
-	</div><!-- END .header -->
+	</div><!-- END .wrap -->
 
-</div><!-- END .wrap -->
+</div><!-- END .header -->
+
+<?php endif; ?>

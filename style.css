@@ -16,12 +16,137 @@ body, html, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
 
 html {
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	font-size: 12px;
-	line-height: 18px;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.1px;
+}
+
+a {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+a:hover {
+	
+}
+
+a img {
+	border: none;
 }
 
 .wrap {
 	width: 600px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clear-both {
+	clear:both;
+	display: block;
+}
+
+h1 {
+	
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 38px;
+}
+
+h3 {
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 300;
+	letter-spacing: .3px;
+}
+
+h4 {
+	
+}
+
+h5 {
+	
+}
+
+h6 {
+	
+}
+
+p {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.post {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.entry {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.post .meta {
+	color: #888888;
+	font-size: 12px;
+}
+
+.post .meta a {
+	color: #888888;
+}
+
+.post .meta .tags,
+.post .meta .tags a {
+	color: #CCCCCC;
+}
+
+.post .entry img.size-full {
+	width: 600px;
+}
+
+.post.post-format-status .entry,
+.post.post-format-aside .entry {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 300;
+	letter-spacing: 0.2px;
+}
+
+/**
+ * .header
+ */
+.header 
+
+/**
+ * Template: single.php
+ */
+
+body.single .post {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+body.single .post.post-format-status,
+body.single .post.post-format-aside {
+	padding-top: 150px;
+}
+
+body.single .post.post-format-status .entry,
+body.single .post.post-format-aside .entry {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 200;
+	letter-spacing: 0.3px;
 }
