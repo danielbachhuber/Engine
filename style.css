@@ -9,6 +9,17 @@ License: GNU General Public License
 License URI: license.txt
 */
 
+body, html, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+}
+
 .wrap {
 	width: 600px;
 	margin-left: auto;
