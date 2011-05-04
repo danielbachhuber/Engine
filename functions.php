@@ -101,6 +101,22 @@ function dub_get_post_format( $post_id = null ) {
 } // END dub_get_post_format()
 
 /**
+ * dub_print_if_active()
+ */
+function dub_print_if_active( $location ) {
+	
+	if ( is_single() ) {
+		$actual_post_format = dub_get_post_format();
+		if ( $actual_post_format == $location ){
+			echo 'active';
+		}
+	} else if ( is_home() && $location == 'home' ) {
+		echo 'active';
+	}
+	
+} // END dub_print_if_active()
+
+/**
  * dub_timestamp()
  */
 function dub_timestamp( $post_id = null ) {

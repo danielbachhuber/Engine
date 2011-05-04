@@ -41,7 +41,7 @@
 			<div class="primary-info">
 				<span class="author"><?php the_author_link(); ?></span>
 				<span class="timestamp"><?php dub_timestamp(); ?></span>
-				<span class="tags"><?php the_tags( '', ', ', '' ); ?></span>				
+				<span class="tags"><?php the_tags( '', ', ', '' ); ?></span>		
 			</div>
 			<div class="clear-both"></div>			
 		</div>

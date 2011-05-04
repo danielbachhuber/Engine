@@ -99,8 +99,8 @@ p {
 ul, ol {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 ul {
@@ -110,6 +110,7 @@ ul {
 ul li, ol li {
 	padding-top: 2px;
 	padding-bottom: 2px;
+	padding-left: 5px;
 }
 
 blockquote {
@@ -137,10 +138,12 @@ blockquote {
 	font-size: 18px;
 	line-height: 26px;
 	color: #888888;
+	padding-bottom: 5px;
 }
 
 .post .entry a {
 	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 1px;
 }
 
 .post .entry a:hover {
@@ -149,6 +152,7 @@ blockquote {
 }
 
 .post .entry a img {
+	padding-bottom: 0;
 	border-bottom: none;
 	vertical-align:top;
 }
@@ -156,7 +160,7 @@ blockquote {
 .post .meta {
 	color: #888888;
 	font-size: 12px;
-	line-height: 19px;
+	line-height: 20px;
 	letter-spacing: 0.2px;
 	padding-top: 2px;
 }
@@ -167,7 +171,7 @@ blockquote {
 
 .post .meta.top-meta {
 	padding-top: 10px;
-	padding-bottom: 5px;
+	padding-bottom: 10px;
 }
 
 .post .meta.has-avatar .primary-info {
@@ -190,7 +194,7 @@ blockquote {
 
 .post .meta .tags,
 .post .meta .tags a {
-	color: #CCCCCC;
+	color: #BBBBBB;
 }
 
 .post .meta a:hover,
@@ -207,6 +211,16 @@ blockquote {
 	width: 600px;
 }
 
+ul.filter-post-formats {
+	padding: 0;
+}
+
+ul.filter-post-formats li {
+	display: inline;
+	padding-left: 0;
+	padding-right: 5px;
+}
+
 /**
  * .header
  */
@@ -216,10 +230,40 @@ blockquote {
 }
 
 /**
+ * .footer
+ */
+
+.footer {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.footer a {
+	color: #BBBBBB;
+}
+
+.footer a.active {
+	color: #444444;
+}
+
+.footer a:hover {
+	background-color: #F2F2F2;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #0066CC;
+}
+
+/**
  * Template: home.php
  */
 body.home .post:first-child {
 	
+}
+
+body.home h3 {
+	padding-top: 0px;
 }
 
 /**
@@ -261,13 +305,13 @@ body.single .post .entry {
 
 body.single .post.post-format-status,
 body.single .post.post-format-aside {
-	padding-top: 100px;
+	padding-top: 50px;
 }
 
 body.single .post.post-format-status .entry,
 body.single .post.post-format-aside .entry {
 	font-size: 18px;
-	line-height: 24px;
+	line-height: 26px;
 	font-weight: 200;
 	letter-spacing: 0.3px;
 }
