@@ -1,5 +1,7 @@
 <?php
 
+define( 'DUB_VERSION', '0.0' );
+
 if ( !class_exists( 'dub' ) ) {
 
 class dub {

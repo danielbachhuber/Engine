@@ -1,8 +1,11 @@
-Features:
+Features to add:
 - Relative timestamps on all posts
 
 - WordPress XML-RPC hack to set post format on publish based on category
 
+
+Big functionality:
+- Post from the homepage for logged-in users
 
 Post formats:
 - Asides
@@ -15,3 +18,4 @@ Tasks:
 - format the header
 - build the loop
 - widgets in the footer
+- Set the typography
