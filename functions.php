@@ -12,7 +12,6 @@ class dub {
 	function __construct() {
 		
 		add_action( 'init', array( &$this, 'enqueue_resources' ) );
-		
 		add_action( 'after_setup_theme', array( &$this, 'after_setup_theme' ) );
 		
 	} // END __construct()
@@ -69,9 +68,60 @@ function dub_head_title() {
 	
 	$title = get_bloginfo('name') . ' | ' . get_bloginfo('description');
 	
+	if ( is_single() ) {
+		global $post;
+		$title = get_the_title( $post->ID );
+	}
+	
 	echo '<title>' . $title . '</title>';
 	
 } // END dub_head_title()
 
+/**
+ * dub_get_post_format()
+ */
+function dub_get_post_format( $post_id = null ) {
+	
+	if ( !isset( $post_id ) ) {
+		global $post;
+		$post_id = $post->ID;
+	}
+	
+	if ( 'status' == get_post_format( $post_id ) || in_category( array( 'statuses', 'status' ) ) ) {
+		return 'status';
+	} else if ( 'aside' == get_post_format( $post_id ) || in_category( array( 'asides', 'aside' ) ) ) {
+		return 'aside';
+	} else if ( 'photo' == get_post_format( $post_id ) || in_category( array( 'photos', 'photo' ) ) ) {
+		return 'photo';
+	} else {
+		return 'standard';
+	}
+	
+} // END dub_get_post_format()
+
+/**
+ * dub_timestamp()
+ */
+function dub_timestamp( $post_id = null ) {
+	
+	if ( !isset( $post_id ) ) {
+		global $post;
+		$post_id = $post->ID;
+	}
+	
+	$post_timestamp = get_the_time( 'U', $post_id );
+	$current_timestamp = time();
+
+	// Only do the relative timestamps for 7 days or less, then just the month and day
+	if ( $post_timestamp > ( $current_timestamp - 604800 ) ) {
+		echo human_time_diff( $post_timestamp ) . ' ago';
+	} else if ( $post_timestamp > ( $current_timestamp - 220752000 ) ) {
+		the_time( 'F jS' );
+	} else {
+		the_time( 'F j, Y' );
+	}
+
+	
+} // END dub_timestamp()
 
 ?>
