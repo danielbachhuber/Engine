@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-	
+	text-decoration: none;
 }
 
 a img {
@@ -65,6 +65,8 @@ h2 {
 	line-height: 36px;
 	font-weight: 300;
 	letter-spacing: -0.3px;
+	padding-top: 15px;
+	padding-bottom: 5px;
 }
 
 h3 {
@@ -119,13 +121,22 @@ blockquote {
 }
 
 .post {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
-.post .entry {
-	padding-top: 5px;
-	padding-bottom: 5px;
+.post.post-format-status .entry,
+.post.post-format-aside .entry {
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 200;
+	letter-spacing: 0.4px;
+}
+
+.post .summary {
+	font-size: 18px;
+	line-height: 26px;
+	color: #888888;
 }
 
 .post .entry a {
@@ -133,7 +144,7 @@ blockquote {
 }
 
 .post .entry a:hover {
-	border-bottom-color: #0066CC;
+	border-bottom-color: #999999;
 	background-color: #F2F2F2;
 }
 
@@ -145,18 +156,36 @@ blockquote {
 .post .meta {
 	color: #888888;
 	font-size: 12px;
+	line-height: 19px;
+	letter-spacing: 0.2px;
+	padding-top: 2px;
 }
 
 .post .meta a {
 	color: #888888;
 }
 
-.post .meta a:hover {
-	text-decoration: underline;
+.post .meta.top-meta {
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
-.post .meta .tags {
-	padding-left: 10px;
+.post .meta.has-avatar .primary-info {
+	margin-left: 65px;
+}
+
+.post .meta.has-avatar .avatar {
+	margin-top: 2px;
+}
+
+.post .meta .author,
+.post .meta .author a {
+	color: #444444;
+}
+
+.post .meta .author,
+.post .meta .timestamp {
+	padding-right: 10px;
 }
 
 .post .meta .tags,
@@ -164,16 +193,18 @@ blockquote {
 	color: #CCCCCC;
 }
 
-.post .entry img.size-full {
-	width: 600px;
+.post .meta a:hover,
+.post .meta .author a:hover,
+.post .meta .timestamp a:hover,
+.post .meta .tags a:hover {
+	background-color: #F2F2F2;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #0066CC;
 }
 
-.post.post-format-status .entry,
-.post.post-format-aside .entry {
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 200;
-	letter-spacing: 0.3px;
+.post .entry img.size-full {
+	width: 600px;
 }
 
 /**
@@ -181,6 +212,13 @@ blockquote {
  */
 
 .header {
+	
+}
+
+/**
+ * Template: home.php
+ */
+body.home .post:first-child {
 	
 }
 
@@ -221,12 +259,21 @@ body.single .post .entry {
 	padding-bottom: 10px;
 }
 
-body.single .post.post-format-standard div.top-meta {
-	text-align:right;
-	color: #888888;
-}
-
 body.single .post.post-format-status,
 body.single .post.post-format-aside {
-	padding-top: 150px;
+	padding-top: 100px;
+}
+
+body.single .post.post-format-status .entry,
+body.single .post.post-format-aside .entry {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 200;
+	letter-spacing: 0.3px;
+}
+
+body.single .post.post-format-standard .entry {
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.3px;
 }

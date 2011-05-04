@@ -11,12 +11,6 @@
 		<div class="entry">
 			<?php the_content(); ?>
 		</div>
-		
-		<div class="meta">
-			<?php dub_timestamp(); ?>
-		</div>
-		
-	</div><!-- END .post -->
 	
 	<?php elseif ( 'aside' == dub_get_post_format() ) : ?>
 		
@@ -25,26 +19,16 @@
 		<div class="entry">
 			<?php the_content(); ?>
 		</div>
-
-		<div class="meta">
-			<a href="<?php the_permalink(); ?>"><?php dub_timestamp(); ?></a>
-		</div>
-
-	</div><!-- END .post -->	
 	
 	<?php elseif ( 'photo' == dub_get_post_format() ) : ?>
 		
 	<div class="post post-format-photo">
+		
+		<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 		<div class="entry">
 			<?php the_content(); ?>
 		</div>
-
-		<div class="meta">
-			<a href="<?php the_permalink(); ?>"><?php dub_timestamp(); ?></a>
-		</div>
-
-	</div><!-- END .post -->
 	
 	<?php else: ?>
 		
@@ -54,15 +38,15 @@
 
 		<div class="entry">
 			<?php the_excerpt(); ?>
-		</div>
-		
-		<div class="meta">
-			<span class="timestamp"><a href="<?php the_permalink(); ?>"><?php dub_timestamp(); ?></a></a> <span class="tags"><?php the_tags( '', ', ', '' ); ?></span>
-		</div>
-
-	</div><!-- END .post -->	
+		</div>	
 	
 	<?php endif; ?>
+	
+		<div class="meta">
+			<span class="timestamp"><a href="<?php the_permalink(); ?>"><?php dub_timestamp(); ?></a></span> <span class="tags"><?php the_tags( '', ', ', '' ); ?></span>
+		</div>
+
+	</div><!-- END .post -->
 
 <?php endwhile; ?>
 
