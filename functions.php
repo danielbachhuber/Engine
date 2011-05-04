@@ -47,5 +47,16 @@ class dub {
 	
 } // END if ( !class_exists( 'dub' ) )
 
+/**
+ * dub_head_title()
+ */
+function dub_head_title() {
+	
+	$title = get_bloginfo('name') . ' | ' . get_bloginfo('description');
+	
+	echo '<title>' . $title . '</title>';
+	
+} // END dub_head_title()
+
 
 ?>

@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>"/>
 
-	<title>untitled</title>
+	<?php dub_head_title(); ?>
 	
 	<?php
 	/**
