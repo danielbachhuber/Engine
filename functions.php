@@ -105,7 +105,7 @@ function dub_get_post_format( $post_id = null ) {
  */
 function dub_print_if_active( $location ) {
 	
-	if ( is_single() ) {
+	if ( is_single() || is_category() ) {
 		$actual_post_format = dub_get_post_format();
 		if ( $actual_post_format == $location ){
 			echo 'active';

@@ -14,7 +14,7 @@ body, html, h1, h2, h3, h4, h5, h6, p, ol, ul, li, blockquote {
 	padding: 0px;
 }
 
-html {
+body {
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 20px;
@@ -56,7 +56,11 @@ a img {
 }
 
 h1 {
-	
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 200;
+	letter-spacing: 0.3px;
+	padding
 }
 
 h2 {
@@ -211,23 +215,75 @@ blockquote {
 	width: 600px;
 }
 
-ul.filter-post-formats {
-	padding: 0;
-}
-
-ul.filter-post-formats li {
-	display: inline;
-	padding-left: 0;
-	padding-right: 5px;
-}
-
 /**
- * .header
+ * Section: .header
  */
 
 .header {
-	
+	background-color: #2F2F2F;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
+
+.header .avatar a img {
+	border: 2px solid #CCCCCC;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.header h1 {
+	margin-left: 65px;
+}
+
+.header ul.filter-post-formats {
+	margin-left: 65px;
+	padding-top: 5px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+.header ul.filter-post-formats li {
+	display: inline;
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+.header ul.filter-post-formats li a {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.header a {
+	color: #999999;
+	display: inline-block;
+}
+
+.header a.page-home {
+	color: #FFFFFF;
+}
+
+.header ul.filter-post-formats li a.active {
+	color: #0066CC;		
+	background-color: #FFFFFF;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;	
+}
+
+.header ul.filter-post-formats li a:hover {
+	background-color: #FFFFFF;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #000000;
+}
+
+/**
+ * Section: .content 
+ */
+
 
 /**
  * .footer
@@ -253,6 +309,16 @@ ul.filter-post-formats li {
 	padding-bottom: 1px;
 	border-bottom: 1px solid #CCCCCC;
 	color: #0066CC;
+}
+
+.footer ul.filter-post-formats {
+	padding: 0;
+}
+
+.footer ul.filter-post-formats li {
+	display: inline;
+	padding-left: 0;
+	padding-right: 5px;
 }
 
 /**
@@ -292,6 +358,14 @@ body.archive.tag .post h4 {
 /**
  * Template: single.php
  */
+
+body.single {
+	background-color: #2F2F2F;
+}
+
+body.single .main {
+	background-color: #FFFFFF;
+}
 
 body.single .post {
 	padding-top: 40px;
