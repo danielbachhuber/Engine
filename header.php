@@ -31,7 +31,7 @@
 		<h1><a class="page-home <?php dub_print_if_active( 'home' ); ?>" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 		
 		<ul class="filter-post-formats">
-			<li><a class="page-home <?php dub_print_if_active( 'home' ); ?>" href="<?php bloginfo('url'); ?>">danielbachhuber.com</a></li>
+			<li><a class="page-home <?php dub_print_if_active( 'home' ); ?>" href="<?php bloginfo('url'); ?>">Home</a></li>
 			<li><a class="page-about <?php dub_print_if_active( 'about' ); ?>" href="<?php bloginfo('url'); ?>/about/">about</a></li>			
 			<li><a class="filter-post-formats-standard <?php dub_print_if_active( 'post' ); ?>" href="<?php bloginfo('url'); ?>/content/posts/">posts</a></li>
 			<li><a class="filter-post-formats-aside <?php dub_print_if_active( 'aside' ); ?>" href="<?php bloginfo('url'); ?>/content/asides/">asides</a></li>
