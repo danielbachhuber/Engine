@@ -232,6 +232,10 @@ blockquote {
 	border-radius: 2px;
 }
 
+.header .avatar a:hover img {
+	border-color: #FFFFFF;
+}
+
 .header h1 {
 	margin-left: 65px;
 }
