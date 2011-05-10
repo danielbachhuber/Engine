@@ -1,6 +1,4 @@
 Features to add:
-- Relative timestamps on all posts
-
 - WordPress XML-RPC hack to set post format on publish based on category
 
 
@@ -15,7 +13,7 @@ Post formats:
 
 
 Tasks:
-- format the header
-- build the loop
-- widgets in the footer
-- Set the typography
+- Add pagination
+- Style gallery posts
+- Ensure single images work
+- Style the footer
