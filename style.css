@@ -56,11 +56,11 @@ a img {
 }
 
 h1 {
+	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 24px;
 	line-height: 24px;
 	font-weight: 200;
-	letter-spacing: 0.3px;
-	padding
+	letter-spacing: -0.1px;
 }
 
 h2 {
@@ -236,6 +236,10 @@ blockquote {
 	margin-left: 65px;
 }
 
+.header h1 a:hover {
+	color: #FFFFFF;
+}
+
 .header ul.filter-post-formats {
 	margin-left: 65px;
 	padding-top: 6px;
@@ -260,24 +264,13 @@ blockquote {
 	display: inline-block;
 }
 
-.header a.page-home {
+.header h1 a.active,
+.header ul.filter-post-formats li a.active {
 	color: #FFFFFF;
 }
 
-.header ul.filter-post-formats li a.active {
-	color: #0066CC;		
-	background-color: #FFFFFF;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;	
-}
-
 .header ul.filter-post-formats li a:hover {
-	background-color: #FFFFFF;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
-	color: #000000;
+	color: #FFFFFF;
 }
 
 /**
