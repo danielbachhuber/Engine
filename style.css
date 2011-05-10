@@ -4,7 +4,415 @@ Theme URI: http://wordpress.org/
 Description: Andrew has a minimalist theme, so I need one too
 Author: Daniel Bachhuber
 Author URI: http://danielbachhuber.com/
-Version: 0.0
+Version: 0.1
 License: GNU General Public License
 License URI: license.txt
 */
+
+body, html, h1, h2, h3, h4, h5, h6, p, ol, ul, li, blockquote {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	font-weight: 300;
+	color: #222222;
+}
+
+a {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+.wrap {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.clear-both {
+	clear:both;
+	display: block;
+}
+
+h1 {
+	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: 200;
+	letter-spacing: -0.1px;
+}
+
+h2 {
+	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 300;
+	letter-spacing: -0.3px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+h3 {
+	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 300;
+	letter-spacing: -0.2px;
+}
+
+h4 {
+	
+}
+
+h5 {
+	
+}
+
+h6 {
+	
+}
+
+p {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+ul, ol {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+ul {
+	list-style-type: square;
+}
+
+ul li, ol li {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+
+blockquote {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666666;
+}
+
+.post {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.post.post-format-status .entry,
+.post.post-format-aside .entry {
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 200;
+	letter-spacing: 0.4px;
+}
+
+.post .summary {
+	font-size: 18px;
+	line-height: 26px;
+	color: #888888;
+	padding-bottom: 5px;
+}
+
+.post .entry a {
+	border-bottom: 1px solid #CCCCCC;
+	padding-bottom: 1px;
+}
+
+.post .entry a:hover {
+	border-bottom-color: #999999;
+	background-color: #F2F2F2;
+}
+
+.post .entry a img {
+	padding-bottom: 0;
+	border-bottom: none;
+	vertical-align:top;
+}
+
+.post .meta {
+	color: #888888;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	padding-top: 2px;
+}
+
+body.single .post .meta {
+	padding-top: 10px;
+}
+
+.post .meta a {
+	color: #888888;
+}
+
+.post .meta.top-meta {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.post .meta.has-avatar .primary-info {
+	margin-left: 65px;
+}
+
+.post .meta.has-avatar .avatar {
+	margin-top: 2px;
+}
+
+.post .meta .author,
+.post .meta .author a {
+	color: #444444;
+}
+
+.post .meta .author,
+.post .meta .timestamp {
+	padding-right: 10px;
+}
+
+.post .meta .tags,
+.post .meta .tags a {
+	color: #BBBBBB;
+}
+
+.post .meta a:hover,
+.post .meta .author a:hover,
+.post .meta .timestamp a:hover,
+.post .meta .tags a:hover {
+	background-color: #F2F2F2;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #0066CC;
+}
+
+.post .entry img.size-full {
+	width: 600px;
+}
+
+/**
+ * Section: .header
+ */
+
+.header {
+	background-color: #2F2F2F;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.header .avatar a img {
+	border: 2px solid #CCCCCC;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.header .avatar a:hover img {
+	border-color: #FFFFFF;
+}
+
+.header h1 {
+	margin-left: 65px;
+}
+
+.header h1 a:hover {
+	color: #FFFFFF;
+}
+
+.header ul.filter-post-formats {
+	margin-left: 65px;
+	padding-top: 6px;
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+}
+
+.header ul.filter-post-formats li {
+	display: inline;
+	padding-left: 0;
+	padding-right: 15px;
+}
+
+.header ul.filter-post-formats li a {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.header a {
+	color: #999999;
+	display: inline-block;
+}
+
+.header h1 a.active,
+.header ul.filter-post-formats li a.active {
+	color: #FFFFFF;
+}
+
+.header ul.filter-post-formats li a:hover {
+	color: #FFFFFF;
+}
+
+/**
+ * Section: .content 
+ */
+
+.meta .avatar a img {
+	border: 2px solid #CCCCCC;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.meta .avatar a:hover {
+	border-color: #222222;
+	background-color: auto;
+	vertical-align: top;
+	padding-bottom: 0;
+	text-decoration: none;
+}
+
+
+/**
+ * .footer
+ */
+
+.footer {
+	padding-top: 40px;
+	padding-bottom: 60px;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 0.3px;
+}
+
+body.single .footer {
+	padding-top: 25px;
+}
+
+.footer a {
+	color: #BBBBBB;
+}
+
+.footer a.active,
+.footer a:hover {
+	color: #222222;
+}
+
+body.single .footer a.active,
+body.single .footer a:hover {
+	color: #FFFFFF;
+}
+
+.footer ul.filter-post-formats {
+	padding: 0;
+}
+
+.footer ul.filter-post-formats li {
+	display: inline;
+	padding-left: 0;
+	padding-right: 5px;
+}
+
+/**
+ * Template: home.php
+ */
+body.home .post:first-child {
+	
+}
+
+body.home h3 {
+	padding-top: 0px;
+}
+
+/**
+ * Template: tag.php
+ */
+
+body.archive.tag .post .format-label {
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	width: 60px;
+	text-align: center;
+	font-weight: 600;
+	background-color: #999999;
+	color: #FFFFFF;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+body.archive.tag .post h4 {
+	margin-left: 100px;
+}
+
+/**
+ * Template: single.php
+ */
+
+body.single {
+	background-color: #2F2F2F;
+}
+
+body.single .main {
+	background-color: #FFFFFF;
+}
+
+body.single .post {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+body.single .post .entry {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+body.single .post.post-format-status,
+body.single .post.post-format-aside {
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+body.single .post.post-format-status .entry,
+body.single .post.post-format-aside .entry {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 200;
+	letter-spacing: 0.3px;
+}
+
+body.single .post.post-format-standard .entry {
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.3px;
+}

@@ -1,9 +1,20 @@
-Features:
-- Relative timestamps on all posts
+Features to add:
+- WordPress XML-RPC hack to set post format on publish based on category
 
+
+Big functionality:
+- Post from the homepage for logged-in users
 
 Post formats:
 - Asides
 - Quotes
 - Photos
 - Galleries
+
+
+Tasks:
+- Add pagination
+- Style gallery posts
+- Ensure single images work
+- Style the footer
+- Finish styling the tag page
