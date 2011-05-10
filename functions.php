@@ -30,7 +30,7 @@ class dub {
 		
 		if ( !is_admin() ) {
 			wp_enqueue_style( 'dub_primary_css', get_bloginfo('template_directory') . '/style.css', false, DUB_VERSION );
-			wp_enqueue_style( 'dub_fonts_css', 'http://fonts.googleapis.com/css?family=Ubuntu:light,regular,500', false, DUB_VERSION );
+			wp_enqueue_style( 'dub_fonts_css', 'http://fonts.googleapis.com/css?family=Ubuntu:light,regular,500' );
 		}
 		
 	} // END enqueue_resources()

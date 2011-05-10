@@ -169,6 +169,10 @@ blockquote {
 	padding-top: 2px;
 }
 
+body.single .post .meta {
+	padding-top: 10px;
+}
+
 .post .meta a {
 	color: #888888;
 }
@@ -281,6 +285,21 @@ blockquote {
  * Section: .content 
  */
 
+.meta .avatar a img {
+	border: 2px solid #CCCCCC;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.meta .avatar a:hover {
+	border-color: #222222;
+	background-color: auto;
+	vertical-align: top;
+	padding-bottom: 0;
+	text-decoration: none;
+}
+
 
 /**
  * .footer
@@ -288,7 +307,7 @@ blockquote {
 
 .footer {
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 	text-align: center;
 	font-size: 12px;
 	letter-spacing: 0.3px;
