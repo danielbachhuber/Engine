@@ -112,6 +112,11 @@ function dub_print_if_active( $location ) {
 		if ( $actual_post_format == $location ){
 			echo 'active';
 		}
+	} else if ( is_page() ) {
+		global $post;
+		if ( $post->post_name == $location ) {
+			echo 'active';
+		} 
 	} else if ( is_home() && $location == 'home' ) {
 		echo 'active';
 	}

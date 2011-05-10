@@ -18,7 +18,7 @@
 </head>
 <body <?php body_class(); ?>>
 	
-<?php if ( !is_single() ): ?>
+<?php if ( !is_single() && !is_page() ): ?>
 	
 <div class="header">
 	
