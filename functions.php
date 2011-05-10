@@ -94,9 +94,11 @@ function dub_get_post_format( $post_id = null ) {
 		return 'aside';
 	} else if ( 'photo' == get_post_format( $post_id ) || in_category( array( 'photos', 'photo' ) ) ) {
 		return 'photo';
-	} else {
+	} else if ( 'standard' == get_post_format( $post_id ) || in_category( array( 'blog', 'posts', 'post' ) ) ) {
 		return 'post';
 	}
+	
+	return false;
 	
 } // END dub_get_post_format()
 

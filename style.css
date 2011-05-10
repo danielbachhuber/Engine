@@ -291,21 +291,25 @@ blockquote {
 	padding-bottom: 40px;
 	text-align: center;
 	font-size: 12px;
+	letter-spacing: 0.3px;
+}
+
+body.single .footer {
+	padding-top: 25px;
 }
 
 .footer a {
 	color: #BBBBBB;
 }
 
-.footer a.active {
-	color: #444444;
+.footer a.active,
+.footer a:hover {
+	color: #222222;
 }
 
-.footer a:hover {
-	background-color: #F2F2F2;
-	padding-bottom: 1px;
-	border-bottom: 1px solid #CCCCCC;
-	color: #0066CC;
+body.single .footer a.active,
+body.single .footer a:hover {
+	color: #FFFFFF;
 }
 
 .footer ul.filter-post-formats {
