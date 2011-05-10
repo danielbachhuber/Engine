@@ -1,6 +1,6 @@
 <?php
 
-define( 'DUB_VERSION', '0.0' );
+define( 'DUB_VERSION', '0.1' );
 
 if ( !class_exists( 'dub' ) ) {
 
