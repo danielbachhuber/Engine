@@ -40,8 +40,8 @@
 			</div>
 			<div class="primary-info">
 				<span class="author"><?php the_author_link(); ?></span>
-				<span class="timestamp"><?php dub_timestamp(); ?></span>
-				<span class="tags"><?php the_tags( '', ', ', '' ); ?></span>		
+				<span class="timestamp"><a href="<?php the_permalink(); ?>"><?php dub_timestamp(); ?></a></span>
+				<span class="tags"><?php the_tags( '', ', ', '' ); ?></span>				
 			</div>
 			<div class="clear-both"></div>			
 		</div>
@@ -84,7 +84,11 @@
 		</div>
 		<?php endif; ?>
 		
-		<div class="meta has-avatar top-meta">
+		<div class="entry">
+			<?php the_content(); ?>
+		</div>
+		
+		<div class="meta has-avatar">
 			<div class="avatar float-left">
 			<?php echo get_avatar( get_option('admin_email'), 48 ); ?>
 			</div>
@@ -93,13 +97,8 @@
 				<span class="timestamp"><a href="<?php the_permalink(); ?>"><?php dub_timestamp(); ?></a></span>
 				<span class="tags"><?php the_tags( '', ', ', '' ); ?></span>				
 			</div>
-			
-			<div class="clear-both"></div>
-		</div>
-		
-		<div class="entry">
-			<?php the_content(); ?>
-		</div>
+			<div class="clear-both"></div>			
+		</div>		
 
 	</div><!-- END .post -->	
 	
