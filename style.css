@@ -287,6 +287,11 @@ body.single .post .meta {
 	padding-bottom: 10px;
 }
 
+.content .pagination {
+	padding-top: 20px;
+	text-align: center;
+}
+
 .meta .avatar a img {
 	border: 2px solid #CCCCCC;
 	-webkit-border-radius: 2px;

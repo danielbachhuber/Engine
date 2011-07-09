@@ -14,6 +14,10 @@
 
 <?php endwhile; ?>
 
+	<div class="pagination">
+		<?php posts_nav_link( ' - ', '&laquo; Newer', 'Older &raquo;' ); ?>
+	</div>
+
 <?php endif; ?>
 
 </div><!-- END .content -->
