@@ -68,7 +68,6 @@ h2 {
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 300;
-	letter-spacing: -0.3px;
 	padding-top: 15px;
 	padding-bottom: 5px;
 }
@@ -80,7 +79,6 @@ h3 {
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 300;
-	letter-spacing: -0.2px;
 }
 
 h4 {
@@ -193,11 +191,6 @@ body.single .post .meta {
 
 .post .meta.has-avatar .avatar {
 	margin-top: 2px;
-}
-
-.post .meta .author,
-.post .meta .author a {
-	color: #444444;
 }
 
 .post .meta .author,
