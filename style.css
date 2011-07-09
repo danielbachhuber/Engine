@@ -56,7 +56,7 @@ a img {
 }
 
 h1 {
-	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 24px;
 	line-height: 24px;
 	font-weight: 200;
@@ -64,7 +64,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 300;
@@ -74,7 +74,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	padding-top: 15px;
 	padding-bottom: 5px;
 	font-size: 24px;
@@ -244,7 +244,7 @@ body.single .post .meta {
 	margin-left: 65px;
 }
 
-.header h1 a:hover {
+.header h1 a {
 	color: #FFFFFF;
 }
 
@@ -272,7 +272,6 @@ body.single .post .meta {
 	display: inline-block;
 }
 
-.header h1 a.active,
 .header ul.filter-post-formats li a.active {
 	color: #FFFFFF;
 }
@@ -284,6 +283,11 @@ body.single .post .meta {
 /**
  * Section: .content 
  */
+
+.content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 .meta .avatar a img {
 	border: 2px solid #CCCCCC;

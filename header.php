@@ -28,7 +28,7 @@
 		<a href="<?php bloginfo('url'); ?>"><?php echo get_avatar( get_option('admin_email'), 48 ); ?></a>
 		</div>
 		
-		<h1><a class="page-home <?php dub_print_if_active( 'home' ); ?>" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+		<h1><a class="page-home" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 		
 		<ul class="filter-post-formats">
 			<li><a class="page-about <?php dub_print_if_active( 'about' ); ?>" href="<?php bloginfo('url'); ?>/about/">about</a></li>			
