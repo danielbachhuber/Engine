@@ -56,7 +56,7 @@ a img {
 }
 
 h1 {
-	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 24px;
 	line-height: 24px;
 	font-weight: 200;
@@ -64,23 +64,21 @@ h1 {
 }
 
 h2 {
-	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 300;
-	letter-spacing: -0.3px;
 	padding-top: 15px;
 	padding-bottom: 5px;
 }
 
 h3 {
-	font-family: 'Ubuntu', "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	padding-top: 15px;
 	padding-bottom: 5px;
 	font-size: 24px;
 	line-height: 32px;
 	font-weight: 300;
-	letter-spacing: -0.2px;
 }
 
 h4 {
@@ -130,6 +128,11 @@ blockquote {
 	padding-bottom: 15px;
 }
 
+.post .entry {
+	font-size: 14px;
+	line-height: 20px;
+}
+
 .post.post-format-status .entry,
 .post.post-format-aside .entry {
 	font-size: 16px;
@@ -142,7 +145,7 @@ blockquote {
 	font-size: 18px;
 	line-height: 26px;
 	color: #888888;
-	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 .post .entry a {
@@ -188,11 +191,6 @@ body.single .post .meta {
 
 .post .meta.has-avatar .avatar {
 	margin-top: 2px;
-}
-
-.post .meta .author,
-.post .meta .author a {
-	color: #444444;
 }
 
 .post .meta .author,
@@ -244,7 +242,7 @@ body.single .post .meta {
 	margin-left: 65px;
 }
 
-.header h1 a:hover {
+.header h1 a {
 	color: #FFFFFF;
 }
 
@@ -272,7 +270,6 @@ body.single .post .meta {
 	display: inline-block;
 }
 
-.header h1 a.active,
 .header ul.filter-post-formats li a.active {
 	color: #FFFFFF;
 }
@@ -284,6 +281,16 @@ body.single .post .meta {
 /**
  * Section: .content 
  */
+
+.content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.content .pagination {
+	padding-top: 20px;
+	text-align: center;
+}
 
 .meta .avatar a img {
 	border: 2px solid #CCCCCC;

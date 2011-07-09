@@ -13,7 +13,6 @@ Post formats:
 
 
 Tasks:
-- Add pagination
 - Style gallery posts
 - Ensure single images work
 - Style the footer
