@@ -1,6 +1,16 @@
 <div class="content">
 
 <?php if ( have_posts() ): ?>
+	
+	<?php
+	global $wp_query;
+	if ( $wp_query->query_vars['paged'] > 1 ) : ?>
+		<div class="pagination top-pagination">
+			<div class="previous-posts-link pagination-link major-link float-left"><?php previous_posts_link( __( '&laquo; Previous' ) ); ?></div>
+			<div class="next-posts-link pagination-link minor-link float-right"><?php next_posts_link( __( 'Next &raquo;' ) ); ?></div>
+			<div class="clear-both"></div>
+		</div>
+	<?php endif; ?>
 
 <?php while ( have_posts() ): the_post(); ?>
 	
@@ -48,9 +58,17 @@
 
 <?php endwhile; ?>
 
-	<div class="pagination">
-		<?php posts_nav_link( ' - ', '&laquo; Newer', 'Older &raquo;' ); ?>
+	<?php if ( $wp_query->query_vars['paged'] > 1 ) : ?>
+	<div class="pagination bottom-pagination">
+		<div class="previous-posts-link pagination-link minor-link float-left"><?php previous_posts_link( __( '&laquo; Previous' ) ); ?></div>
+		<div class="next-posts-link pagination-link major-link float-right"><?php next_posts_link( __( 'Next &raquo;' ) ); ?></div>
+		<div class="clear-both"></div>
 	</div>
+	<?php else: ?>
+	<div class="pagination bottom-pagination">
+		<div class="next-posts-link pagination-link"><?php next_posts_link( __( 'Next &raquo;' ) ); ?></div>
+	</div>
+	<?php endif; ?>
 
 <?php endif; ?>
 
