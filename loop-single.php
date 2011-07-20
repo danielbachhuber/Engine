@@ -26,11 +26,7 @@
 		<div class="summary">
 			<?php the_excerpt(); ?>
 		</div>
-		<?php endif; ?>
-		
-		<div class="entry">
-			<?php the_content(); ?>
-		</div>		
+		<?php endif; ?>	
 	
 	<?php endif; ?>
 	
