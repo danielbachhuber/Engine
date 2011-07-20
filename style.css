@@ -1,7 +1,7 @@
 /*
-Theme Name: dub
-Theme URI: http://wordpress.org/
-Description: Andrew has a minimalist theme, so I need one too
+Theme Name: Engine
+Theme URI: http://danielbachhuber.com/
+Description: Poetry drives the machine
 Author: Daniel Bachhuber
 Author URI: http://danielbachhuber.com/
 Version: 0.1
@@ -130,7 +130,7 @@ blockquote {
 
 .post .entry {
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 21px;
 }
 
 .post.post-format-status .entry,
@@ -138,7 +138,7 @@ blockquote {
 	font-size: 16px;
 	line-height: 23px;
 	font-weight: 200;
-	letter-spacing: 0.4px;
+	letter-spacing: 0.2px;
 }
 
 .post .summary {
@@ -166,9 +166,9 @@ blockquote {
 
 .post .meta {
 	color: #888888;
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 20px;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.1px;
 	padding-top: 2px;
 }
 
@@ -193,6 +193,10 @@ body.single .post .meta {
 	margin-top: 2px;
 }
 
+.post .meta .author a {
+	color: #0066CC;
+}
+
 .post .meta .author,
 .post .meta .timestamp {
 	padding-right: 10px;
@@ -215,6 +219,38 @@ body.single .post .meta {
 
 .post .entry img.size-full {
 	width: 600px;
+}
+
+.pagination .pagination-link a {
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	border: 1px solid #F2F2F2;
+	color: #AAAAAA;
+}
+
+.pagination.top-pagination {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.pagination.bottom-pagination {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pagination .pagination-link.minor-link {
+	width: 200px;
+}
+
+.pagination .pagination-link.major-link {
+	width: 400px;
+}
+
+.pagination .pagination-link a:hover {
+	color: #888888;
+	border-color: #CCCCCC;
 }
 
 /**
@@ -247,8 +283,7 @@ body.single .post .meta {
 }
 
 .header ul.filter-post-formats {
-	margin-left: 65px;
-	padding-top: 6px;
+	padding-top: 0;
 	padding-left: 0;
 	padding-right: 0;
 	padding-bottom: 0;
@@ -285,11 +320,6 @@ body.single .post .meta {
 .content {
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-
-.content .pagination {
-	padding-top: 20px;
-	text-align: center;
 }
 
 .meta .avatar a img {
@@ -349,7 +379,7 @@ body.single .footer a:hover {
 }
 
 /**
- * Template: home.php
+ * home.php
  */
 body.home .post:first-child {
 	
@@ -360,7 +390,7 @@ body.home h3 {
 }
 
 /**
- * Template: tag.php
+ * tag.php
  */
 
 body.archive.tag .post .format-label {
@@ -383,7 +413,7 @@ body.archive.tag .post h4 {
 }
 
 /**
- * Template: single.php
+ * single.php
  */
 
 body.single {

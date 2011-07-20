@@ -1,10 +1,10 @@
 <?php
 
-define( 'DUB_VERSION', '0.1' );
+define( 'ENGINE_VERSION', '0.1' );
 
-if ( !class_exists( 'dub' ) ) {
+if ( !class_exists( 'engine' ) ) {
 
-class dub {
+class engine {
 	
 	/**
 	 * __construct()
@@ -29,7 +29,7 @@ class dub {
 	function enqueue_resources() {
 		
 		if ( !is_admin() ) {
-			wp_enqueue_style( 'dub_primary_css', get_bloginfo('template_directory') . '/style.css', false, DUB_VERSION );
+			wp_enqueue_style( 'engine_primary_css', get_bloginfo('template_directory') . '/style.css', false, ENGINE_VERSION );
 		}
 		
 	} // END enqueue_resources()
@@ -54,17 +54,17 @@ class dub {
 	} // END after_setup_theme()
 	
 	
-} // END class dub
+} // END class engine
 	
-} // END if ( !class_exists( 'dub' ) )
+} // END if ( !class_exists( 'engine' ) )
 
-global $dub;
-$dub = new dub();
+global $engine;
+$engine = new engine();
 
 /**
- * dub_head_title()
+ * engine_head_title()
  */
-function dub_head_title() {
+function engine_head_title() {
 	
 	$title = get_bloginfo('name') . ' | ' . get_bloginfo('description');
 	
@@ -75,12 +75,12 @@ function dub_head_title() {
 	
 	echo '<title>' . $title . '</title>';
 	
-} // END dub_head_title()
+} // END engine_head_title()
 
 /**
- * dub_get_post_format()
+ * engine_get_post_format()
  */
-function dub_get_post_format( $post_id = null ) {
+function engine_get_post_format( $post_id = null ) {
 	
 	if ( !isset( $post_id ) ) {
 		global $post;
@@ -99,15 +99,15 @@ function dub_get_post_format( $post_id = null ) {
 	
 	return false;
 	
-} // END dub_get_post_format()
+} // END engine_get_post_format()
 
 /**
- * dub_print_if_active()
+ * engine_print_if_active()
  */
-function dub_print_if_active( $location ) {
+function engine_print_if_active( $location ) {
 	
 	if ( is_single() || is_category() ) {
-		$actual_post_format = dub_get_post_format();
+		$actual_post_format = engine_get_post_format();
 		if ( $actual_post_format == $location ){
 			echo 'active';
 		}
@@ -120,12 +120,12 @@ function dub_print_if_active( $location ) {
 		echo 'active';
 	}
 	
-} // END dub_print_if_active()
+} // END engine_print_if_active()
 
 /**
- * dub_timestamp()
+ * engine_timestamp()
  */
-function dub_timestamp( $post_id = null ) {
+function engine_timestamp( $post_id = null ) {
 	
 	if ( !isset( $post_id ) ) {
 		global $post;
@@ -145,6 +145,6 @@ function dub_timestamp( $post_id = null ) {
 	}
 
 	
-} // END dub_timestamp()
+} // END engine_timestamp()
 
 ?>
