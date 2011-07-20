@@ -4,7 +4,7 @@
 
 <?php while ( have_posts() ): the_post(); ?>
 	
-	<?php if ( 'status' == dub_get_post_format() ) : ?>
+	<?php if ( 'status' == engine_get_post_format() ) : ?>
 
 	<div class="post post-format-status">
 		
@@ -12,7 +12,7 @@
 			<?php the_content(); ?>
 		</div>
 	
-	<?php elseif ( 'aside' == dub_get_post_format() ) : ?>
+	<?php elseif ( 'aside' == engine_get_post_format() ) : ?>
 		
 	<div class="post post-format-aside">
 
@@ -20,7 +20,7 @@
 			<?php the_content(); ?>
 		</div>
 	
-	<?php elseif ( 'photo' == dub_get_post_format() ) : ?>
+	<?php elseif ( 'photo' == engine_get_post_format() ) : ?>
 		
 	<div class="post post-format-photo">
 		
@@ -43,7 +43,7 @@
 	<?php endif; ?>
 	
 		<div class="meta">
-			<span class="timestamp"><a href="<?php the_permalink(); ?>"><?php dub_timestamp(); ?></a></span> <span class="tags"><?php the_tags( '', ', ', '' ); ?></span>
+			<span class="timestamp"><a href="<?php the_permalink(); ?>"><?php engine_timestamp(); ?></a></span> <span class="tags"><?php the_tags( '', ', ', '' ); ?></span>
 		</div>
 
 	</div><!-- END .post -->
