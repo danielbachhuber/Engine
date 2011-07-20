@@ -283,8 +283,7 @@ body.single .post .meta {
 }
 
 .header ul.filter-post-formats {
-	margin-left: 65px;
-	padding-top: 6px;
+	padding-top: 0;
 	padding-left: 0;
 	padding-right: 0;
 	padding-bottom: 0;

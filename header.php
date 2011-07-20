@@ -24,19 +24,13 @@
 	
 	<div class="wrap">
 		
-		<div class="avatar float-left">
-		<a href="<?php bloginfo('url'); ?>"><?php echo get_avatar( get_option('admin_email'), 48 ); ?></a>
-		</div>
-		
-		<h1><a class="page-home" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-		
 		<ul class="filter-post-formats">
+			<li><a class="page-home <?php engine_print_if_active( 'home' ); ?>" href="<?php bloginfo('url'); ?>">danielbachhuber.com</a></li>
 			<li><a class="page-about <?php engine_print_if_active( 'about' ); ?>" href="<?php bloginfo('url'); ?>/about/">about</a></li>			
 			<li><a class="filter-post-formats-standard <?php engine_print_if_active( 'post' ); ?>" href="<?php bloginfo('url'); ?>/content/posts/">posts</a></li>
 			<li><a class="filter-post-formats-aside <?php engine_print_if_active( 'aside' ); ?>" href="<?php bloginfo('url'); ?>/content/asides/">asides</a></li>
 			<li><a class="filter-post-formats-photo <?php engine_print_if_active( 'photo' ); ?>" href="<?php bloginfo('url'); ?>/content/photos/">photos</a></li>					
-			<li><a class="filter-post-formats-status <?php engine_print_if_active( 'status' ); ?>" href="<?php bloginfo('url'); ?>/content/statuses/">statuses</a></li>
-			<li><a class="filter-post-formats-gallery <?php engine_print_if_active( 'gallery' ); ?>" href="<?php bloginfo('url'); ?>/content/galleries/">galleries</a></li>										
+			<li><a class="filter-post-formats-status <?php engine_print_if_active( 'status' ); ?>" href="<?php bloginfo('url'); ?>/content/statuses/">statuses</a></li>									
 		</ul>
 		
 		<div class="clear-both"></div>
