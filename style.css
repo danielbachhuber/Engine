@@ -218,7 +218,7 @@ body.single .post .meta {
 }
 
 .post .entry img.size-full {
-	width: 600px;
+	max-width: 600px;
 }
 
 .pagination .pagination-link a {
