@@ -226,8 +226,8 @@ body.single .post .meta {
 	padding-top: 3px;
 	padding-bottom: 3px;
 	text-align: center;
-	border: 1px solid #F2F2F2;
-	color: #AAAAAA;
+	border: 1px solid #DDDDDD;
+	color: #999999;
 }
 
 .pagination.top-pagination {
@@ -249,8 +249,9 @@ body.single .post .meta {
 }
 
 .pagination .pagination-link a:hover {
-	color: #888888;
-	border-color: #CCCCCC;
+	color: #0066CC;
+	background-color: #F2F2F2;
+	border-color: #BBBBBB;
 }
 
 /**
