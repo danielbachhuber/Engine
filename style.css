@@ -4,7 +4,7 @@ Theme URI: http://danielbachhuber.com/
 Description: Poetry drives the machine
 Author: Daniel Bachhuber
 Author URI: http://danielbachhuber.com/
-Version: 0.2a
+Version: 0.2b
 License: GNU General Public License
 License URI: license.txt
 */
@@ -137,7 +137,7 @@ blockquote {
 .post.post-format-status .entry,
 .post.post-format-aside .entry {
 	font-size: 16px;
-	line-height: 23px;
+	line-height: 24px;
 	font-weight: 200;
 	letter-spacing: 0.3px;
 }
