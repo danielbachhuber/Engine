@@ -349,7 +349,7 @@ body.single .footer a:hover {
 }
 
 /**
- * Template: home.php
+ * home.php
  */
 body.home .post:first-child {
 	
@@ -360,7 +360,7 @@ body.home h3 {
 }
 
 /**
- * Template: tag.php
+ * tag.php
  */
 
 body.archive.tag .post .format-label {
@@ -383,7 +383,7 @@ body.archive.tag .post h4 {
 }
 
 /**
- * Template: single.php
+ * single.php
  */
 
 body.single {
