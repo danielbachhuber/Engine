@@ -4,7 +4,7 @@
 	
 	<div class="wrap">
 		
-		<?php get_template_part( 'loop', 'tag' ); ?>
+		<?php get_template_part( 'loop', 'index' ); ?>
 		
 	</div><!-- END .wrap -->
 	

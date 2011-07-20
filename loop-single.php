@@ -6,17 +6,15 @@
 
 	<?php if ( 'status' == engine_get_post_format() ) : ?>
 
-	<div class="post post-format-status">
+	<div class="post post-format-status">	
 	
 	<?php elseif ( 'aside' == engine_get_post_format() ) : ?>
 		
-	<div class="post post-format-aside">
+	<div class="post post-format-aside">	
 	
 	<?php elseif ( 'photo' == engine_get_post_format() ) : ?>
 		
 	<div class="post post-format-photo">
-		
-		<h2 class="post-title"><?php the_title(); ?></h2>
 	
 	<?php else: ?>
 		
@@ -29,12 +27,16 @@
 			<?php the_excerpt(); ?>
 		</div>
 		<?php endif; ?>
+		
+		<div class="entry">
+			<?php the_content(); ?>
+		</div>		
 	
 	<?php endif; ?>
 	
 	<div class="entry">
 		<?php the_content(); ?>
-	</div>
+	</div>	
 	
 	<div class="meta has-avatar">
 		<div class="avatar float-left">
