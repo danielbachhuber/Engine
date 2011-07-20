@@ -118,8 +118,8 @@ ul li, ol li {
 blockquote {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	color: #666666;
 }
 
@@ -130,7 +130,8 @@ blockquote {
 
 .post .entry {
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 22px;
+	letter-spacing: 0.2px;
 }
 
 .post.post-format-status .entry,
@@ -138,7 +139,7 @@ blockquote {
 	font-size: 16px;
 	line-height: 23px;
 	font-weight: 200;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.3px;
 }
 
 .post .summary {
