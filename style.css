@@ -221,6 +221,38 @@ body.single .post .meta {
 	width: 600px;
 }
 
+.pagination .pagination-link a {
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	border: 1px solid #F2F2F2;
+	color: #AAAAAA;
+}
+
+.pagination.top-pagination {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.pagination.bottom-pagination {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pagination .pagination-link.minor-link {
+	width: 200px;
+}
+
+.pagination .pagination-link.major-link {
+	width: 400px;
+}
+
+.pagination .pagination-link a:hover {
+	color: #888888;
+	border-color: #CCCCCC;
+}
+
 /**
  * Section: .header
  */
@@ -289,11 +321,6 @@ body.single .post .meta {
 .content {
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-
-.content .pagination {
-	padding-top: 20px;
-	text-align: center;
 }
 
 .meta .avatar a img {
