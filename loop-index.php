@@ -23,8 +23,6 @@
 	<?php elseif ( 'photo' == engine_get_post_format() ) : ?>
 		
 	<div class="post post-format-photo">
-		
-		<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 		<div class="entry">
 			<?php the_content(); ?>
