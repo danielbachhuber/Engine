@@ -132,7 +132,7 @@ function engine_timestamp( $post_id = null ) {
 		$post_id = $post->ID;
 	}
 	
-	$post_timestamp = get_the_time( 'U', $post_id );
+	$post_timestamp = get_post_time( 'U', true, $post_id );
 	$current_timestamp = time();
 
 	// Only do the relative timestamps for 7 days or less, then just the month and day
