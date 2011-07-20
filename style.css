@@ -4,7 +4,7 @@ Theme URI: http://danielbachhuber.com/
 Description: Poetry drives the machine
 Author: Daniel Bachhuber
 Author URI: http://danielbachhuber.com/
-Version: 0.1
+Version: 0.2a
 License: GNU General Public License
 License URI: license.txt
 */
@@ -118,8 +118,8 @@ ul li, ol li {
 blockquote {
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 	color: #666666;
 }
 
@@ -130,7 +130,8 @@ blockquote {
 
 .post .entry {
 	font-size: 14px;
-	line-height: 21px;
+	line-height: 22px;
+	letter-spacing: 0.2px;
 }
 
 .post.post-format-status .entry,
@@ -138,7 +139,7 @@ blockquote {
 	font-size: 16px;
 	line-height: 23px;
 	font-weight: 200;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.3px;
 }
 
 .post .summary {
@@ -218,7 +219,40 @@ body.single .post .meta {
 }
 
 .post .entry img.size-full {
-	width: 600px;
+	max-width: 600px;
+}
+
+.pagination .pagination-link a {
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	border: 1px solid #DDDDDD;
+	color: #999999;
+}
+
+.pagination.top-pagination {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.pagination.bottom-pagination {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pagination .pagination-link.minor-link {
+	width: 200px;
+}
+
+.pagination .pagination-link.major-link {
+	width: 400px;
+}
+
+.pagination .pagination-link a:hover {
+	color: #0066CC;
+	background-color: #F2F2F2;
+	border-color: #BBBBBB;
 }
 
 .pagination .pagination-link a {

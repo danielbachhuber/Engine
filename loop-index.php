@@ -51,7 +51,7 @@
 	<?php endif; ?>
 	
 		<div class="meta">
-			<span class="timestamp"><a href="<?php the_permalink(); ?>"><?php engine_timestamp(); ?></a></span> <span class="tags"><?php the_tags( '', ', ', '' ); ?></span>
+			<span class="timestamp"><a href="<?php the_permalink(); ?>"><?php engine_timestamp(); ?></a></span> <span class="tags"><?php the_category( ', '); ?>, <?php the_tags( '', ', ', '' ); ?></span>
 		</div>
 
 	</div><!-- END .post -->
