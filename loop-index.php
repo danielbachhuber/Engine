@@ -10,7 +10,21 @@
 			<div class="next-posts-link pagination-link minor-link float-right"><?php next_posts_link( __( 'Next &raquo;' ) ); ?></div>
 			<div class="clear-both"></div>
 		</div>
+	<?php else: ?>
+	
+	<?php if ( is_tag() ): ?>
+		<?php
+			$term = get_queried_object();
+		?>
+		<h2 class="view-title"><span class="label">Topic:</span> <?php single_term_title(); ?></h2>
+		<?php if ( !empty( $term->description ) ): ?>
+		<div class="view-description"><?php echo wpautop( $term->description ); ?></div>
+		<?php endif; ?>
 	<?php endif; ?>
+		
+	<?php endif; ?>
+	
+	<div class="posts-stream">
 
 <?php while ( have_posts() ): the_post(); ?>
 	
@@ -57,6 +71,8 @@
 	</div><!-- END .post -->
 
 <?php endwhile; ?>
+
+	</div><!-- END .posts-stream -->
 
 	<?php if ( $wp_query->query_vars['paged'] > 1 ) : ?>
 	<div class="pagination bottom-pagination">

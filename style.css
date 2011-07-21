@@ -4,7 +4,7 @@ Theme URI: http://danielbachhuber.com/
 Description: Poetry drives the machine
 Author: Daniel Bachhuber
 Author URI: http://danielbachhuber.com/
-Version: 0.2b
+Version: 0.2c
 License: GNU General Public License
 License URI: license.txt
 */
@@ -123,9 +123,21 @@ blockquote {
 	color: #666666;
 }
 
+.posts-stream .post {
+	border-top: 1px dotted #DDDDDD;
+}
+
+.posts-stream .post:first-child {
+	border-top: none;
+}
+
 .post {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 16px;
+	padding-bottom: 20px;
+}
+
+.posts-stream h3 {
+	padding-top: 5px;
 }
 
 .post .entry {
@@ -142,12 +154,14 @@ blockquote {
 	letter-spacing: 0.3px;
 }
 
-.post .summary {
+/*
+body.single .post.post-format-standard .entry > p:first-child {
 	font-size: 18px;
 	line-height: 26px;
 	color: #888888;
-	padding-top: 5px;
+	padding-bottom: 15px;
 }
+*/
 
 .post .entry a {
 	border-bottom: 1px solid #CCCCCC;
@@ -163,6 +177,16 @@ blockquote {
 	padding-bottom: 0;
 	border-bottom: none;
 	vertical-align:top;
+}
+
+.post .entry img.alignright {
+	float:right;
+	margin-left: 10px;
+}
+
+.post .entry img.alignleft {
+	float:left;
+	margin-right: 10px;
 }
 
 .post .meta {
@@ -426,6 +450,25 @@ body.home h3 {
 /**
  * tag.php
  */
+
+.view-title .label {
+	color: #888888;
+	text-transform: lowercase;
+}
+
+.view-description {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	padding-top: 5px;
+}
+
+.view-description a:hover {
+	background-color: #F2F2F2;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #0066CC;
+}
 
 body.archive.tag .post .format-label {
 	padding-top: 2px;

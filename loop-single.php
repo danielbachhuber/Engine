@@ -21,12 +21,6 @@
 	<div class="post post-format-standard">
 		
 		<h2 class="post-title"><?php the_title(); ?></h2>
-		
-		<?php if ( !empty( $post->post_excerpt ) ) : ?>
-		<div class="summary">
-			<?php the_excerpt(); ?>
-		</div>
-		<?php endif; ?>	
 	
 	<?php endif; ?>
 	
