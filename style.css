@@ -123,9 +123,21 @@ blockquote {
 	color: #666666;
 }
 
+.posts-stream .post {
+	border-top: 1px dotted #DDDDDD;
+}
+
+.posts-stream .post:first-child {
+	border-top: none;
+}
+
 .post {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 16px;
+	padding-bottom: 20px;
+}
+
+.posts-stream h3 {
+	padding-top: 5px;
 }
 
 .post .entry {

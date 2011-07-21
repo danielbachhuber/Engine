@@ -11,6 +11,8 @@
 			<div class="clear-both"></div>
 		</div>
 	<?php endif; ?>
+	
+	<div class="posts-stream">
 
 <?php while ( have_posts() ): the_post(); ?>
 	
@@ -57,6 +59,8 @@
 	</div><!-- END .post -->
 
 <?php endwhile; ?>
+
+	</div><!-- END .posts-stream -->
 
 	<?php if ( $wp_query->query_vars['paged'] > 1 ) : ?>
 	<div class="pagination bottom-pagination">
