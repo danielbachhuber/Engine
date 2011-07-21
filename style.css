@@ -167,6 +167,16 @@ body.single .post.post-format-standard .entry > p:first-child {
 	vertical-align:top;
 }
 
+.post .entry img.alignright {
+	float:right;
+	margin-left: 10px;
+}
+
+.post .entry img.alignleft {
+	float:left;
+	margin-right: 10px;
+}
+
 .post .meta {
 	color: #888888;
 	font-size: 13px;
