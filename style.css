@@ -419,6 +419,25 @@ body.home h3 {
  * tag.php
  */
 
+.view-title .label {
+	color: #888888;
+	text-transform: lowercase;
+}
+
+.view-description {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	padding-top: 5px;
+}
+
+.view-description a:hover {
+	background-color: #F2F2F2;
+	padding-bottom: 1px;
+	border-bottom: 1px solid #CCCCCC;
+	color: #0066CC;
+}
+
 body.archive.tag .post .format-label {
 	padding-top: 2px;
 	padding-left: 6px;
