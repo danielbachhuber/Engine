@@ -142,12 +142,14 @@ blockquote {
 	letter-spacing: 0.3px;
 }
 
-.post .summary {
+/*
+body.single .post.post-format-standard .entry > p:first-child {
 	font-size: 18px;
 	line-height: 26px;
 	color: #888888;
-	padding-top: 5px;
+	padding-bottom: 15px;
 }
+*/
 
 .post .entry a {
 	border-bottom: 1px solid #CCCCCC;
