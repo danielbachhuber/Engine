@@ -138,10 +138,10 @@ function engine_timestamp( $post_id = null ) {
 	// Only do the relative timestamps for 7 days or less, then just the month and day
 	if ( $post_timestamp > ( $current_timestamp - 604800 ) ) {
 		echo human_time_diff( $post_timestamp ) . ' ago';
-	} else if ( $post_timestamp > ( $current_timestamp - 220752000 ) ) {
-		the_time( 'F jS' );
+	} else if ( $post_timestamp > ( $current_timestamp - 220752000 ) && get_the_time( 'Y', $post_id ) == date( 'Y' ) ) {
+		echo get_the_time( 'F jS', $post_id );
 	} else {
-		the_time( 'F j, Y' );
+		echo get_the_time( 'F j, Y', $post_id );
 	}
 
 	
