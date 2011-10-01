@@ -1,6 +1,6 @@
-<div class="wrap">
-	
-	<div class="footer">
+<div class="footer">
+
+	<div class="wrap">
 		
 		<ul class="filter-post-formats">
 			<li><a class="<?php engine_print_if_active( 'home' ); ?>" href="<?php bloginfo('url'); ?>">danielbachhuber.com</a></li>
@@ -11,9 +11,9 @@
 			<li><a class="filter-post-formats-status <?php engine_print_if_active( 'status' ); ?>" href="<?php bloginfo('url'); ?>/content/statuses/">statuses</a></li>									
 		</ul>
 	
-	</div><!-- END .footer -->
+	</div><!-- END .wrap -->
 	
-</div><!-- END .wrap -->
+</div><!-- END .footer -->
 
 <?php wp_footer(); ?>
 

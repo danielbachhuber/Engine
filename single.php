@@ -6,6 +6,8 @@
 		
 		<?php get_template_part( 'loop', 'single' ); ?>
 		
+		<?php //comments_template( '', true ); ?>
+		
 	</div><!-- END .wrap -->
 	
 </div><!-- END .main -->
