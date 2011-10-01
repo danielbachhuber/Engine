@@ -3,20 +3,12 @@
 <?php if ( have_posts() ): ?>
 
 <?php while ( have_posts() ): the_post(); ?>
+	
+	<?php $post_format = engine_get_post_format(); ?>
+	
+	<div id="post-<?php the_id(); ?>" <?php post_class( 'post-format-' . $post_format ); ?>>	
 
-	<?php if ( 'status' == engine_get_post_format() ) : ?>
-
-	<div class="post post-format-status">	
-	
-	<?php elseif ( 'aside' == engine_get_post_format() ) : ?>
-		
-	<div class="post post-format-aside">	
-	
-	<?php elseif ( 'photo' == engine_get_post_format() ) : ?>
-		
-	<div class="post post-format-photo">
-	
-	<?php else: ?>
+	<?php if ( 'gallery' == $post_format || 'post' == $post_format ): ?>
 		
 	<div class="post post-format-standard">
 		
