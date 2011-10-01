@@ -1,6 +1,6 @@
 <?php
 
-define( 'ENGINE_VERSION', '0.2c' );
+define( 'ENGINE_VERSION', '0.2d' );
 
 if ( !class_exists( 'engine' ) ) {
 
