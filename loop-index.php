@@ -74,6 +74,7 @@
 				<div class="featured-image float-left post-thumbnail">
 				<a href="<?php echo get_permalink( $gallery_image->ID ); ?>"><?php echo wp_get_attachment_image( $gallery_image->ID, 'medium' ); ?></a>
 				</div>
+				<?php continue; ?>
 			<?php endif; ?>
 
 		<div class="gallery-thumbnail post-thumbnail float-left">
