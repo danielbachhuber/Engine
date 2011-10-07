@@ -124,8 +124,13 @@
 			<?php the_content(); ?>
 		</div>
 	
-	<?php else: ?>
+	<?php elseif ( 'post' == $post_format ): ?>
 
+		<?php if ( has_post_thumbnail() ): ?>
+			<a href="<?php the_permalink(); ?>">
+			<?php the_post_thumbnail( array( 75, 75 ), array( 'class' => 'float-right' ) ); ?>
+			</a>
+		<?php endif; ?>
 		<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 		<div class="entry">
