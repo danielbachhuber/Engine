@@ -34,7 +34,7 @@
 	
 	<div class="meta top-meta float-left"><span class="timestamp"><a href="<?php the_permalink(); ?>"><span class="permalink hidden">&#8734; permalink</span><span class="timestamp-text"><?php engine_timestamp(); ?></span></a></span></div>	
 	
-	<?php if ( 'status' == $post_format ) : ?>
+	<?php if ( in_array( $post_format, array( 'status', 'photo', 'aside', 'quote' ) ) ) : ?>
 		
 		<div class="entry">
 			<?php the_content(); ?>
@@ -110,19 +110,7 @@
 		<div class="entry">
 			<?php the_excerpt(); ?>
 		</div>
-		<?php endif; ?>		
-	
-	<?php elseif ( 'aside' == $post_format ) : ?>
-
-		<div class="entry">
-			<?php the_content(); ?>
-		</div>
-	
-	<?php elseif ( 'photo' == $post_format ) : ?>
-
-		<div class="entry">
-			<?php the_content(); ?>
-		</div>
+		<?php endif; ?>
 	
 	<?php elseif ( 'post' == $post_format ): ?>
 
