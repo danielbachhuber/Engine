@@ -108,6 +108,8 @@ function engine_get_post_format( $post_id = null ) {
 		return 'aside';
 	} else if ( 'photo' == get_post_format( $post_id ) || in_category( array( 'photos', 'photo' ) ) ) {
 		return 'photo';
+	} else if ( 'quote' == get_post_format( $post_id ) || in_category( array( 'quotes', 'quote' ) ) ) {
+		return 'quote';
 	} else if ( 'gallery' == get_post_format( $post_id ) || in_category( array( 'galleries', 'gallery' ) ) ) {
 		return 'gallery';		
 	} else if ( 'standard' == get_post_format( $post_id ) || in_category( array( 'blog', 'posts', 'post' ) ) ) {

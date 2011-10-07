@@ -38,7 +38,7 @@
 					</div>
 					<?php endif; ?>	
 					<span class="previous-image navigation-link left-navigation"><?php previous_image_link( false, '&larr;&nbsp;&nbsp;&nbsp;' ); ?></span>
-					<a class="navigation-link" href="<?php echo get_permalink( $post->post_parent ); ?>#content"><?php echo get_the_title( $post->post_parent ); ?></a>	
+					<a class="navigation-link" href="<?php echo get_permalink( $post->post_parent ); ?>"><?php echo get_the_title( $post->post_parent ); ?></a>	
 					<span class="next-image navigation-link right-navigation"><?php next_image_link( false, '&nbsp;&nbsp;&nbsp;&rarr;' ); ?></span>
 				</div>				
 
