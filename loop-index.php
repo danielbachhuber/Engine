@@ -32,8 +32,6 @@
 	
 	<div id="post-<?php the_id(); ?>" <?php post_class( 'post-format-' . $post_format ); ?>>
 	
-	<div class="meta top-meta float-left"><span class="timestamp"><a href="<?php the_permalink(); ?>"><span class="permalink hidden">&#8734; permalink</span><span class="timestamp-text"><?php engine_timestamp(); ?></span></a></span></div>	
-	
 	<?php if ( in_array( $post_format, array( 'status', 'photo', 'aside', 'quote' ) ) ) : ?>
 		
 		<div class="entry">
@@ -128,6 +126,7 @@
 	<?php endif; ?>
 	
 		<div class="meta">
+			<span class="timestamp"><a href="<?php the_permalink(); ?>"><?php engine_timestamp(); ?></a></span>
 			<span class="tags"><?php the_category( ', '); ?>, <?php the_tags( '', ', ', '' ); ?></span>
 		</div>
 
