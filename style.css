@@ -4,7 +4,7 @@ Theme URI: http://danielbachhuber.com/
 Description: Poetry drives the machine
 Author: Daniel Bachhuber
 Author URI: http://danielbachhuber.com/
-Version: 0.2d
+Version: 0.2f
 License: GNU General Public License
 License URI: license.txt
 */
@@ -15,13 +15,13 @@ body, html, h1, h2, h3, h4, h5, h6, p, ol, ul, li, blockquote {
 }
 
 body {
-	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	font-family: "Helvetica", "Arial", sans-serif;
 	font-size: 13px;
 	line-height: 20px;
-	letter-spacing: 0.2px;
 	font-weight: 300;
 	color: #222222;
 	background-color: #2F2F2F;
+	letter-spacing: 0.1px;
 }
 
 .main {
@@ -92,15 +92,12 @@ body.single-attachment .main .wrap {
 }
 
 h1 {
-	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 24px;
 	line-height: 24px;
 	font-weight: 200;
-	letter-spacing: -0.1px;
 }
 
 h2 {
-	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 300;
@@ -109,7 +106,6 @@ h2 {
 }
 
 h3 {
-	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	padding-top: 15px;
 	padding-bottom: 5px;
 	font-size: 24px;
@@ -179,7 +175,7 @@ blockquote {
 .post .entry {
 	font-size: 14px;
 	line-height: 22px;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.1px;
 }
 
 .post.post-format-status .entry,
@@ -187,7 +183,7 @@ blockquote {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 200;
-	letter-spacing: 0.3px;
+	letter-spacing: 0.2px;
 }
 
 /*
@@ -324,14 +320,6 @@ body.single .post .meta {
 	color: #CCC;
 }
 
-.post .meta .timestamp a:hover .permalink {
-	display: inline;
-}
-
-.post .meta .timestamp a:hover .timestamp-text {
-	display: none;
-}
-
 .post .meta.has-avatar .primary-info {
 	margin-left: 65px;
 }
@@ -345,7 +333,7 @@ body.single .post .meta {
 }
 
 .post .meta .author,
-.post .meta .primary-info .timestamp {
+.post .meta .timestamp {
 	padding-right: 10px;
 }
 
