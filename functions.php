@@ -15,6 +15,9 @@ class engine {
 		add_action( 'after_setup_theme', array( &$this, 'after_setup_theme' ) );
 		//add_action( 'post_link', array( &$this, 'action_post_link' ) );
 		
+		// Left and right arrow keys on galleries
+		add_action( 'wp_footer', array( &$this, 'gallery_keyboard_navigation' ) );
+		
 	} // END __construct()
 	
 	/**
@@ -30,6 +33,7 @@ class engine {
 	function enqueue_resources() {
 		
 		if ( !is_admin() ) {
+			wp_enqueue_script( 'jquery' );
 			wp_enqueue_style( 'engine_primary_css', get_bloginfo('template_directory') . '/style.css', false, ENGINE_VERSION );
 		}
 		
@@ -65,6 +69,36 @@ class engine {
 		return $permalink;
 	}
 	
+	/**
+	 * Add left and right arrow keyboard navigation to galleries of attachments
+	 *
+	 * @since 0.2
+	 */
+	function gallery_keyboard_navigation() {
+		
+		if ( !is_attachment() )
+			return;
+		?>
+		<script type="text/javascript">
+		
+			jQuery(document).ready(function(){
+			
+				jQuery(document).keyup(function(event){
+					
+					if ( event.keyCode == 37 ) {
+						var previous_image_link = jQuery('.previous-image.navigation-link a').attr('href');
+						if ( previous_image_link )
+							window.location.href = previous_image_link;
+					} else if ( event.keyCode == 39 ) {
+						var next_image_link = jQuery('.next-image.navigation-link a').attr('href');
+						if ( next_image_link )
+							window.location.href = next_image_link;
+					}
+				});
+			});
+		</script>
+		<?php
+	}
 	
 } // END class engine
 	
