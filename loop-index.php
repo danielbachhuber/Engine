@@ -32,7 +32,7 @@
 	
 	<div id="post-<?php the_id(); ?>" <?php post_class( 'post-format-' . $post_format ); ?>>
 	
-	<?php if ( in_array( $post_format, array( 'status', 'photo', 'aside', 'quote' ) ) ) : ?>
+	<?php if ( in_array( $post_format, array( 'status', 'photo', 'aside', 'quote', 'video' ) ) ) : ?>
 		
 		<div class="entry">
 			<?php the_content(); ?>
