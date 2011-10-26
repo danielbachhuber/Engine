@@ -35,6 +35,8 @@ class engine {
 		if ( !is_admin() ) {
 			wp_enqueue_script( 'jquery' );
 			wp_enqueue_style( 'engine_primary_css', get_bloginfo('template_directory') . '/style.css', false, ENGINE_VERSION );
+			if ( is_singular() && get_option( 'thread_comments' ) )
+				wp_enqueue_script( 'comment-reply' );
 		}
 		
 	} // END enqueue_resources()
@@ -52,6 +54,7 @@ class engine {
 			'quote',
 			'image',
 			'link',
+			'video',
 		);
 		add_theme_support( 'post-formats', $post_formats );
 		add_post_type_support( 'post', 'post-formats' );
@@ -215,7 +218,7 @@ function engine_comments( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'twentyeleven' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'twentyeleven' ), '<span class="edit-link">', '</span>' ); ?></p>
+		<p><?php _e( 'Pingback:', 'engine' ); ?> <?php comment_author_link(); ?></p>
 	<?php
 			break;
 		default :
